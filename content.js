@@ -80,9 +80,7 @@ let hiddenElements;
 
 const observer = new MutationObserver((mutations, obs) => {
   for (const elementData of ELEMENTS_DATA) {
-    let element;
-
-    element = document.querySelector(elementData.elementSelector);
+    const element = document.querySelector(elementData.elementSelector);
 
     if (element === null) {
       continue;
